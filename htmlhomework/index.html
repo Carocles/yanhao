@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖北美食介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff3300;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+        .intro {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .intro h2 {
+            color: #ff6347;
+        }
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .dish-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 设置两列 */
+            grid-gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+        .dish {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .dish img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .dish h3 {
+            color: #ff6347;
+            margin: 10px 0;
+        }
+        .dish p {
+            font-size: 16px;
+            color: #666;
+        }
+        .dish a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .dish a:hover {
+            text-decoration: underline;
+        }
+        .dish:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>湖北美食</h1>
+    </header>
+    <main>
+        <div class="intro">
+            <h2>湖北美食文化</h2>
+            <p>湖北省地处中国中部，因其得天独厚的地理位置和丰富的自然资源，形成了独具特色的美食文化。这里的美食以辣味、鲜美为主，许多菜肴融合了多种地方风味，给食客带来无与伦比的味觉享受。</p>
+        </div>
+        
+        <div class="dish-list">
+            <div class="dish">
+                <h3>小龙虾</h3>
+                <p>香辣可口的小龙虾是湖北夏季最具代表性的美食之一。</p>
+                <p><a href="web/dish2.html">点击了解更多</a></p>
+            </div>
+            <div class="dish">
+                <h3>武昌鱼</h3>
+                <p>武昌鱼以肉质鲜嫩、味道鲜美而闻名，是湖北的传统美食。</p>
+                <p><a href="web/dish3.html">点击了解更多</a></p>
+            </div>
+            <div class="dish">
+                <h3>藕汤</h3>
+                <p>清爽的藕汤，汤鲜藕脆，口感极佳，是湖北人餐桌上的常见美食。</p>
+                <p><a href="web/dish4.html">点击了解更多</a></p>
+            </div>
+            <div class="dish">
+                <h3>热干面</h3>
+                <p>热干面是湖北武汉的经典早餐，麻辣、酸香、筋道。</p>
+                <p><a href="web/dish1.html">点击了解更多</a></p>
+            </div>
+        </div>
+        <button onclick="window.location.href='寝室主页'">返回主页</button>
+    </main>
+</body>
+</html>
